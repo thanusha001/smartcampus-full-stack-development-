@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<link rel="shortcut icon" href="Images/logo.png" />
+<head>
+<title>Smart Campus</title>
+    <link href="Styles/StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <link href="Styles/Menu.css" rel="Stylesheet" type="text/css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Slider/nivo-slider.css" type="text/css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+      <div>
+     <table border="0px solid black" width="100%">
+        <tr>
+            <td width="220px" style="text-align:center;">
+           <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Images/logo.png" alt=""width="200px"></a>
+            </td>
+        <td>
+            <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+            <script>
+                jssor_1_slider_init = function () {
+                    var jssor_1_SlideshowTransitions = [
+                { $Duration: 1200, $Opacity: 2 }
+                ];
+                    var jssor_1_options = {
+                        $AutoPlay: true,
+                        $SlideshowOptions: {
+                            $Class: $JssorSlideshowRunner$,
+                            $Transitions: jssor_1_SlideshowTransitions,
+                            $TransitionsOrder: 1
+                        },
+                        $ArrowNavigatorOptions: {
+                            $Class: $JssorArrowNavigator$
+                        },
+                        $BulletNavigatorOptions: {
+                            $Class: $JssorBulletNavigator$
+                        }
+                    };
+                    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+                    function ScaleSlider() {
+                        var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                        if (refSize) {
+                            refSize = Math.min(refSize, 1100);
+                            jssor_1_slider.$ScaleWidth(refSize);
+                        }
+                        else {
+                            window.setTimeout(ScaleSlider, 30);
+                        }
+                    }
+                    ScaleSlider();
+                    $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                    $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+                    $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                };
+            </script>
+            <style>
+                .jssorb05 {
+                    position: absolute;
+                }
+                .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background: url('Images/b05.png') no-repeat;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .jssorb05 div { background-position: -7px -7px; }
+                .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+                .jssorb05 .av { background-position: -67px -7px; }
+                .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+                .jssora12l, .jssora12r {
+                    display: block;
+                    position: absolute;
+                    width: 30px;
+                    height: 46px;
+                    cursor: pointer;
+                    background: url('Images/a12.png') no-repeat;
+                    overflow: hidden;
+                }
+                .jssora12l { background-position: -16px -37px; }
+                .jssora12r { background-position: -75px -37px; }
+                .jssora12l:hover { background-position: -136px -37px; }
+                .jssora12r:hover { background-position: -195px -37px; }
+                .jssora12l.jssora12ldn { background-position: -256px -37px; }
+                .jssora12r.jssora12rdn { background-position: -315px -37px; }
+            </style>
+            <div class="container">
+                <div style="border:2px dashed #00737A; border-radius:20px; width: 820px;">
+                    <div id="jssor_1" style="position: relative; border-radius:20px; margin: 0 auto; top: 0px; left: 0px; width: 1100px; height: 225px; overflow: hidden; visibility: hidden;">
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('Images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1100px; height: 300px; overflow: hidden;">
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="slider/new1.jpg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="slider/new2.jpeg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="slider/new3.jpeg" />
+                            </div>
+                        </div>
+                        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+                            <div data-u="prototype" style="width:16px;height:16px;"></div>
+                        </div>
+                        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+                    </div>
+                    <script>
+                    jssor_1_slider_init();
+                    </script>
+                </div>
+               </td>
+            </tr>
+            </table>
+        </div>
+    <div >
+    </div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="color:beige">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+           <li class="nav-item">
+               <a class="nav-link" href="index.html"><span>Home</span></a>
+           </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Course</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="home_crs_details.py"><span>Course Details</span></a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Staff Login</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="adm_login.py"><span>Admin</span></a></li>
+                  <li><a class="dropdown-item" href="faculty_login.py"><span>Faculty</span></a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Student</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="student_reg.py"><span>Register</span></a></li>
+                  <li><a class="dropdown-item" href="student_login.py"><span>Login</span></a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="contact.py"><span>Contact</span></a>
+           </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+     <div class="marque" style="margin-top:15px;height:400px;">
+    <marquee>
+            <img src="Images/marque/3.jpg" Height="400">
+            &nbsp;&nbsp;&nbsp;
+            <img src="Images/Marque/2.jpg" Height="400">
+            &nbsp;&nbsp;&nbsp;
+            <img src="Images/Marque/1.jpg" Height="400">
+            &nbsp;&nbsp;&nbsp;
+            <img src="Images/Marque/4.jpg" Height="400">
+            &nbsp;&nbsp;&nbsp;
+<!--            <img src="Images/Marquee/5.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/6.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/7.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/8.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/9.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/10.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+<!--            <img src="Images/Marquee/11.jpg" Height="400">-->
+<!--            &nbsp;&nbsp;&nbsp;-->
+        </marquee>
+    </div>
+    <br/>
+      <footer class="footer container-fluid">
+          <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <h5>About Us</h5>
+                            <p>Smart Campus is one of the best way for the students to learn more.</p>
+                            <p>It is the best method for students that it gives subject material,exam previous quection paper,class notes.</p>
+                        </div>
+                        <div class="col-lg-6">
+                        <h5>Contact Us</h5>
+                            <p><i class="bi bi-envelope-at-fill"></i>Email: thanushathangam@gmail.com</p>
+                            <p>Contact: 6381843415</p>
+                        </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <p>&copy; 2023 Smartcampus. All © Copy rights Reserved.@Smart Campus</p>
+                            </div>
+                        </div>
+                </div>
+      </footer>
+</body>
+</html>
