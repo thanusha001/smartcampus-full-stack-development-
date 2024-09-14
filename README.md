@@ -73,4 +73,4 @@ Smart Campus is a digital platform designed to make college management easier fo
 
 By automating tasks like attendance and assignment submissions, the Smart Campus system helps save time, reduces paperwork, and improves communication between students, teachers, and staff. It’s built using JavaScript for the frontend and Python with MySQL for the backend, ensuring that it's reliable, secure, and easy to use.
 
-
+## project(copywrite)
