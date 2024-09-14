@@ -1,9 +1,5 @@
 # smartcampus-full-stack-development-
 
-For your GitHub project, here’s a sample README content for the **"Smart Campus"** project based on the PDF provided:
-
----
-
 # Smart Campus
 
 ## Project Overview
